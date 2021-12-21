@@ -1,5 +1,99 @@
+html{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* HEADER ---------------------------------------*/
+
+.row{
+    width: 100%;
+    padding: 30px 10px 30px 10px;
+    position: fixed;
+    top: 0;
+    line-height: 1.5em;
+}
+
+header .col{
+    width: 50%;
+    float: left;
+}
+
+.logo-wrapper, .nav-left{
+    float: left;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.logo-wrapper{
+    width: 20%;
+}
+
+.logo-wrapper img{
+    width: 80%;
+}
+
+.nav-right, .button-wrapper{
+    float: right;
+}
+
+.button-wrapper{
+    width: 15%;
+    text-align: right;
+}
+
+.button-wrapper > button{
+    padding: 5px 20px;
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+/* DEBUG */
+
+/* .container{
+    border: 2px dashed yellowgreen;
+}
+
+nav{
+    border: 1px solid red;
+}
+
+header .col:first-child{
+    border: 1px solid black;
+}
+
+header .col:last-child{
+    border: 1px solid black;
+}
+
+.logo-wrapper,.button-wrapper{
+    border: 1px dashed blue;
+} */
