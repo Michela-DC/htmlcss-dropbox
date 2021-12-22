@@ -114,7 +114,7 @@ section{
     width: 90%;
 }
 
-/* section 2 = rate-plan*/
+/* section 2 = plan-section*/
 
 .small-container{
     max-width: 70%;
@@ -130,39 +130,58 @@ section{
     font-size: calc(3vh + 15px);
 }
 
-.small-container .row:first-child{
-    padding-bottom: 30px;
+.fatturazione > span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    vertical-align: -2px;
 }
 
-.fatturazione label:nth-child(2){
-    padding-right: 15px;
+.fatturazione > span:hover{
+    border: 4px solid #0061FF;
+}
+
+.fatturazione > a{
+    margin-right: 10px;
+}
+
+.small-container .row:first-child{
+    padding-bottom: 15px;
+}
+
+#plan-section .row:nth-child(2){
+    margin: 0 -20px 0 -20px;
+/* se guardo nell'inspector la row supera lateralmente il container ma il margine delle colonne laterali va a coincidere con il container quindi vuol dire che la sottrazione del margin della row al padding della colonna ha funzionato e ora la spaziatura è giusta */
 }
 
 .small-container .col {
-    width: 29.5%;
+    width: calc(100%/3);
     height: 950px;
     float: left;
+    padding: 20px;
+    border: 1px solid yellowgreen;
+}
+
+.plan-type{
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.small-container .col:nth-child(2){
-    margin: 0 52px;
-}
-
-.col-header{
+.plan-header{
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px 0;
 }
 
-.piano-dropbox,.punti-salienti{
+.piano-info,.punti-salienti{
     width: 83%;
     padding: 30px 0;
     margin: auto;
     position: relative;
 }
 
-.piano-dropbox h3{
+.piano-info h3{
     font-size: 25px;
     padding-bottom: 10px;
 }
@@ -250,12 +269,12 @@ section{
 
 /* DEBUG */
 
+.row{
+    border: 1px dashed blue;
+}
 
 /* .container{
     border: 1px solid fuchsia;
-}
-.row{
-    border: 1px dashed blue;
 }
 
 
