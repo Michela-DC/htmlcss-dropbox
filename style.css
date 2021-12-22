@@ -18,7 +18,7 @@ a{
     color: currentColor;
 }
 
-.clearfix{
+.clearfix::after{
     content: '';
     display: table;
     clear: both;
@@ -29,6 +29,9 @@ a{
     background-color: #0061FF;
     color: white;
     border: none;
+    width: 100%;
+    display: inline-block;
+    width: auto;
 }
 
 
@@ -37,12 +40,13 @@ a{
 header{
     position: sticky;
     top: 0;
+    z-index: 10;
     background-color: white;
 }
 
 header .row{
-    width: 100%;
-    padding: 15px;
+    max-width: 100%;
+    padding: 20px 15px;
     top: 0;
     line-height: 1.7em;
 }
@@ -81,53 +85,181 @@ nav ul li{
 
 /* MAIN --------------------------------------- */
 
-.section:first-child{
+.section{
     width: 100%;
-    /* height: 440px; */
-    background-color: #B4D0E7;
-}
-
-.section .container{
-    width: 82%;
-    margin: 0 auto;
 }
 
 /* section 1 */
 
+.section:first-child{
+    background-color: #B4D0E7;
+    min-height: 585px;
+}
+
+.section:first-child .container{
+    max-width: 82%;
+    margin: 0 auto;
+}
+
 .row h1{
-    font-size: calc(2vh + 55px);
+    font-size: calc(3vh + 50px);;
     padding-top: 65px;
     padding-bottom: 30px;
 }
 
-.section .col:first-child{
+.jumbo-col:first-child{
     width: 30%;
     display: inline-block;
-    padding-bottom: 65px;
 }
 
-.col > p:first-child{
+.jumbo-col > p:first-child{
     padding-bottom: 50px;
 }
 
-.col > .annulla{
+.jumbo-col > .annulla{
     padding: 15px 0 35px 0;
 }
 
-.col i{
+.jumbo-col i{
     font-size: 35px;
 }
 
-.col.jumbo{
+.jumbo-img_wrapper{
     width: 70%;
     float: right;
     text-align: right;
 }
 
-.jumbo img{
+.jumbo-img_wrapper img{
     width: 90%;
 }
 
+/* section 2 */
+
+.small-container{
+    max-width: 70%;
+    margin: auto;
+}
+
+.small-container .row:first-child, .row:nth-child(2){
+    padding-bottom: 40px;
+}
+
+.small-container .row h2{
+    padding: 100px 0 40px 0;
+    font-size: calc(3vh + 15px);
+}
+
+.small-container .row:first-child{
+    padding-bottom: 30px;
+}
+
+.fatturazione label:nth-child(2){
+    padding-right: 15px;
+}
+
+.small-container .col {
+    width: 29.5%;
+    height: 950px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.small-container .col:nth-child(2){
+    margin: 0 52px;
+}
+
+.col-header{
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+.piano-dropbox,.punti-salienti{
+    width: 83%;
+    padding: 30px 0;
+    margin: auto;
+    position: relative;
+}
+
+.piano-dropbox h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.price{
+    padding-bottom: 7px;
+}
+
+.validità{
+    color: #848484;
+    padding-bottom: 40px;
+}
+
+.descrizione li{
+ padding-bottom: 20px;
+}
+
+.free-30days{
+    margin: 20px 0;
+    display: block;
+}
+
+.buy-now{
+    text-decoration: underline;
+    color: #0061FF;
+}
+
+.piano-dropbox::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 30%;
+    height: 1px;
+    left: 0;
+    display: block;
+    background-color: lightgray;
+}
+
+.punti-salienti h4, ul li{
+    padding-bottom: 20px;
+}
+
+.fa-check{
+    color: #0061FF;
+}
+
+.section-footer{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer-col{
+    padding: 30px 20px 20px 20px;
+}
+
+.footer-col:nth-child(2){
+    width: 60%;
+    float: left;
+}
+
+.footer-col h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.footer-col h4{
+    padding-bottom: 30px;
+}
+
+.footer-col:nth-child(3){
+    width: 40%;
+    float: left;
+}
+
+.footer-col .blue-button{
+    padding: 7px 50px 7px 50px;
+}
 
 
 
@@ -138,8 +270,8 @@ nav ul li{
 
 /* DEBUG */
 
-/*
- .container{
+
+/* .container{
     border: 1px solid fuchsia;
 }
 
@@ -149,10 +281,10 @@ nav ul li{
 
 .col{
     border: 2px solid green;
-}
+} */
 
-}
 
+/*
 nav{
     border: 1px solid red;
 }
