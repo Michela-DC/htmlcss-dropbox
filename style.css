@@ -63,31 +63,39 @@ nav ul li{
 
 /* MAIN --------------------------------------- */
 
-.section{
+section{
     width: 100%;
 }
 
-/* section 1 */
+/* section 1 = Jumbo */
 
-.section:first-child{
+.jumbo{
     background-color: #B4D0E7;
-    min-height: 585px;
+    height: 625px;
 }
 
-.section:first-child .container{
+.jumbo .container{
     max-width: 82%;
-    margin: 0 auto;
+    margin: auto;
 }
 
-.row h1{
+.jumbo .row h1{
     font-size: calc(3vh + 50px);;
     padding-top: 65px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
+}
+
+.jumbo-col{
+    float: left;
 }
 
 .jumbo-col:first-child{
     width: 30%;
-    display: inline-block;
+}
+
+.jumbo-col:last-child{
+    width: 70%;
+    text-align: right;
 }
 
 .jumbo-col > p:first-child{
@@ -102,17 +110,11 @@ nav ul li{
     font-size: 35px;
 }
 
-.jumbo-img_wrapper{
-    width: 70%;
-    float: right;
-    text-align: right;
-}
-
 .jumbo-img_wrapper img{
     width: 90%;
 }
 
-/* section 2 */
+/* section 2 = rate-plan*/
 
 .small-container{
     max-width: 70%;
