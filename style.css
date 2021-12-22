@@ -25,13 +25,10 @@ a{
 }
 
 .blue-button{
-    padding: 7px 20px;
+    padding: 5px 20px;
     background-color: #0061FF;
     color: white;
     border: none;
-    width: 100%;
-    display: inline-block;
-    width: auto;
 }
 
 
@@ -48,40 +45,21 @@ header .row{
     max-width: 100%;
     padding: 20px 15px;
     top: 0;
-    line-height: 1.7em;
 }
 
 header .col{
-    width: 50%;
     float: left;
 }
 
-.logo-wrapper, .nav-left{
-    float: left;
-}
-
-nav ul li{
-    display: inline-block;
-    padding: 0 15px;
-}
-
-.logo-wrapper{
-    width: 20%;
-}
-
-.logo-wrapper img{
-    width: 85%;
-}
-
-.nav-right, .button-wrapper{
+header .col.log-in{
     float: right;
 }
 
-.button-wrapper{
-    width: 15%;
-    text-align: right;
+nav ul li{
+    float: left;
+    padding: 0 15px;
+    line-height: 30px;
 }
-
 
 /* MAIN --------------------------------------- */
 
@@ -274,24 +252,19 @@ nav ul li{
 /* .container{
     border: 1px solid fuchsia;
 }
-
 .row{
     border: 1px dashed blue;
 }
 
+
 .col{
     border: 2px solid green;
-} */
+} 
 
 
-/*
+
 nav{
     border: 1px solid red;
 }
 
-
-
-
-.logo-wrapper,.button-wrapper{
-    border: 1px dashed blue;
-} */
+*/
