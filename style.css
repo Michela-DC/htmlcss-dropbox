@@ -24,13 +24,27 @@ a{
     clear: both;
 }
 
-.blue-button{
-    padding: 5px 20px;
+section{
+    width: 100%;
+}
+
+.container{
+    max-width: 82%;
+    margin: auto;
+}
+
+.small-container{
+    max-width: 70%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.button{
+    padding: 7px 20px;
     background-color: #0061FF;
     color: white;
     border: none;
 }
-
 
 /* HEADER --------------------------------------- */
 
@@ -63,50 +77,41 @@ nav ul li{
 
 /* MAIN --------------------------------------- */
 
-section{
-    width: 100%;
-}
-
 /* section 1 = Jumbo */
 
-.jumbo{
+#jumbo{
     background-color: #B4D0E7;
     height: 625px;
 }
 
-.jumbo .container{
-    max-width: 82%;
-    margin: auto;
-}
-
-.jumbo .row h1{
+#jumbo .row h1{
     font-size: calc(3vh + 50px);;
     padding-top: 65px;
     padding-bottom: 35px;
 }
 
-.jumbo-col{
+#jumbo .col{
     float: left;
 }
 
-.jumbo-col:first-child{
+#jumbo .col:first-child{
     width: 30%;
 }
 
-.jumbo-col:last-child{
+#jumbo .col:last-child{
     width: 70%;
     text-align: right;
 }
 
-.jumbo-col > p:first-child{
+#jumbo .col > p:first-child{
     padding-bottom: 50px;
 }
 
-.jumbo-col > .annulla{
+#jumbo .col > .annulla{
     padding: 15px 0 35px 0;
 }
 
-.jumbo-col i{
+#jumbo .col i{
     font-size: 35px;
 }
 
@@ -116,16 +121,11 @@ section{
 
 /* section 2 = plan-section*/
 
-.small-container{
-    max-width: 70%;
-    margin: auto;
-}
-
-.small-container .row:first-child, .row:nth-child(2){
+#plan-section .row:first-child, .row:nth-child(2){
     padding-bottom: 40px;
 }
 
-.small-container .row h2{
+#plan-section .row h2{
     padding: 100px 0 40px 0;
     font-size: calc(3vh + 15px);
 }
@@ -147,7 +147,7 @@ section{
     margin-right: 10px;
 }
 
-.small-container .row:first-child{
+#plan-section .row:first-child{
     padding-bottom: 15px;
 }
 
@@ -156,16 +156,15 @@ section{
 /* se guardo nell'inspector la row supera lateralmente il container ma il margine delle colonne laterali va a coincidere con il container quindi vuol dire che la sottrazione del margin della row al padding della colonna ha funzionato e ora la spaziatura è giusta */
 }
 
-.small-container .col {
+#plan-section .col {
     width: calc(100%/3);
-    height: 950px;
     float: left;
     padding: 20px;
-    border: 1px solid yellowgreen;
 }
 
 .plan-type{
     border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 980px;
 }
 
 .plan-header{
@@ -261,7 +260,30 @@ section{
     padding: 7px 50px 7px 50px;
 }
 
+/* section 3 = partener-dropbox */
 
+#partner-dropbox .col{
+    width: 50%;
+    float: left; 
+}
+
+#partner-dropbox .col:nth-child(2){
+    padding: 50px;
+}
+
+#partner-dropbox .col > img{
+    width: 100%;
+}
+
+#partner-dropbox .col h2, p{
+    padding-bottom: 30px;
+}
+
+#partner-dropbox .col .button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
 
 
 
@@ -270,18 +292,18 @@ section{
 
 /* DEBUG */
 
+/* 
 .row{
     border: 1px dashed blue;
 }
 
-/* .container{
+.col{
+    border: 2px solid fuchsia;
+} 
+.container{
     border: 1px solid fuchsia;
 }
 
-
-.col{
-    border: 2px solid green;
-} 
 
 
 
