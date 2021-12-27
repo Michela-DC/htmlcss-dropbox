@@ -28,6 +28,20 @@ section{
     width: 100%;
 }
 
+h2{
+    padding-bottom: 40px;
+    font-size: calc(3vh + 15px);
+}
+
+h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+p{
+    line-height: 1.5em;
+}
+
 .container{
     max-width: 82%;
     margin: auto;
@@ -108,26 +122,25 @@ nav ul li{
 }
 
 #jumbo .col > .annulla{
-    padding: 15px 0 35px 0;
+    padding: 20px 0 35px 0;
 }
 
 #jumbo .col i{
     font-size: 35px;
 }
 
+.jumbo-img_wrapper{
+    padding-bottom: 100px;
+}
+
 .jumbo-img_wrapper img{
-    width: 90%;
+    max-width: 90%;
 }
 
 /* section 2 = plan-section*/
 
 #plan-section .row:first-child, .row:nth-child(2){
     padding-bottom: 40px;
-}
-
-#plan-section .row h2{
-    padding: 100px 0 40px 0;
-    font-size: calc(3vh + 15px);
 }
 
 .fatturazione > span{
@@ -156,7 +169,7 @@ nav ul li{
 /* se guardo nell'inspector la row supera lateralmente il container ma il margine delle colonne laterali va a coincidere con il container quindi vuol dire che la sottrazione del margin della row al padding della colonna ha funzionato e ora la spaziatura è giusta */
 }
 
-#plan-section .col {
+#plan-section .col , #operations-section .col{
     width: calc(100%/3);
     float: left;
     padding: 20px;
@@ -178,11 +191,6 @@ nav ul li{
     padding: 30px 0;
     margin: auto;
     position: relative;
-}
-
-.piano-info h3{
-    font-size: 25px;
-    padding-bottom: 10px;
 }
 
 .price{
@@ -242,11 +250,6 @@ nav ul li{
     float: left;
 }
 
-.footer-col h3{
-    font-size: 25px;
-    padding-bottom: 20px;
-}
-
 .footer-col h4{
     padding-bottom: 30px;
 }
@@ -272,10 +275,10 @@ nav ul li{
 }
 
 #partner-dropbox .col > img{
-    width: 100%;
+    max-width: 100%;
 }
 
-#partner-dropbox .col h2, p{
+#partner-dropbox .col h3, p{
     padding-bottom: 30px;
 }
 
@@ -285,6 +288,22 @@ nav ul li{
     border: 1px solid black;
 }
 
+/* section 4 = operations-section */
+
+#operations-section img{
+    width: 100%;
+}
+
+#operations-section h3{
+    padding: 20px 0;
+}
+
+#operations-section a{
+    text-decoration: underline;
+}
+
+
+
 
 
 
@@ -292,23 +311,20 @@ nav ul li{
 
 /* DEBUG */
 
-/* 
+
 .row{
     border: 1px dashed blue;
 }
 
-.col{
+#plan-section .col, .col{
     border: 2px solid fuchsia;
 } 
 .container{
-    border: 1px solid fuchsia;
+    border: 1px solid greenyellow;
 }
-
-
-
 
 nav{
     border: 1px solid red;
 }
 
-*/
+
