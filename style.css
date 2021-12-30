@@ -29,7 +29,7 @@ section{
 }
 
 h2{
-    font-size: calc(3vh + 25px);
+    font-size: calc(3vh + 15px);
     padding-bottom: 40px;
 }
 
@@ -95,13 +95,12 @@ nav ul li{
 
 #jumbo{
     background-color: #B4D0E7;
-    height: 625px;
+    height: 665px;
 }
 
 #jumbo .row h1{
     font-size: calc(3vh + 50px);;
-    padding-top: 65px;
-    padding-bottom: 35px;
+    padding: 85px 0 40px 0;
 }
 
 #jumbo .col{
@@ -118,7 +117,7 @@ nav ul li{
 }
 
 #jumbo .col > p:first-child{
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 #jumbo .col > .annulla{
@@ -134,7 +133,7 @@ nav ul li{
 }
 
 .jumbo-img_wrapper img{
-    max-width: 90%;
+    max-width: 93%;
 }
 
 /* section 2 = plan-section*/
@@ -310,7 +309,7 @@ nav ul li{
 }
 
 #team-section .row:first-child h2{
-    max-width: 55%;
+    max-width: 53%;
     padding-bottom: 30px;
 }
 
@@ -412,8 +411,34 @@ nav ul li{
     background-color: #e4e4e6;;
 }
 
+/* Section 6 = freeTrial-section */
+#freeTrial-section{
+    background-color: #b4d0e7;
+    padding-top: 100px;
+}
 
+#freeTrial-section .col:first-child{
+    width: 70%;
+    float: left;
+    color: #61082b;
+}
 
+#freeTrial-section .col:first-child h2{
+    width: 70%;
+    padding: 0;
+}
+
+#freeTrial-section .col:last-child{
+    width: 30%;
+    float: left;
+}
+
+#freeTrial-section a{
+    background-color: #ffff;
+    display: block;
+    text-align: center;
+    padding: 7px 0;
+}
 
 
 
@@ -434,12 +459,12 @@ nav ul li{
 }
 
 
- #team-section .img-wrapper{
+#team-section .img-wrapper{
     border: 1px dashed green;
 } 
 
 nav{
     border: 1px solid red;
-} */
+}
 
-
+ */
