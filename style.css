@@ -1,6 +1,6 @@
 html{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 *{
@@ -34,7 +34,7 @@ h2{
 }
 
 h3{
-    font-size: 25px;
+    font-size: calc(2vh + 10px);
     padding-bottom: 10px;
 }
 
@@ -51,6 +51,10 @@ p{
     max-width: 70%;
     margin: auto;
     padding-bottom: 100px;
+}
+
+.padded-container{
+    padding-top: 100px;
 }
 
 .button{
@@ -408,13 +412,12 @@ nav ul li{
     left: 0;
     top: 115px;
     display: block;
-    background-color: #e4e4e6;;
+    background-color: #e4e4e6;
 }
 
 /* Section 6 = freeTrial-section */
 #freeTrial-section{
     background-color: #b4d0e7;
-    padding-top: 100px;
 }
 
 #freeTrial-section .col:first-child{
@@ -440,13 +443,49 @@ nav ul li{
     padding: 7px 0;
 }
 
+/* Section 7 = faq-section */
+#faq-section h3{
+    padding-bottom: 50px;
+    position: relative;
+    font-size: calc(2vh + 15px);
+}
+
+#faq-section .questions{
+    padding: 30px 0;
+    position: relative;
+    font-weight: 900;
+}
+
+#faq-section .questions div{
+    display: inline-block;
+}
+
+#faq-section .questions i{
+    float: right;
+    padding-right: 20px;
+}
+
+#faq-section h3::after, #faq-section .questions::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    display: block;
+    background-color: #e4e4e6;
+}
+
+
+
+
+
 
 
 
 /* DEBUG */
 
-
-/* .row{
+/* 
+.row{
     border: 1px dashed blue;
 }
 
@@ -465,6 +504,6 @@ nav ul li{
 
 nav{
     border: 1px solid red;
-}
+} */
 
- */
+
