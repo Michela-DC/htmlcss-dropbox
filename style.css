@@ -1,6 +1,7 @@
 html{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -95,7 +96,7 @@ nav ul li{
 
 /* MAIN --------------------------------------- */
 
-/* section 1 = Jumbo */
+/* Section 1 = Jumbo */
 
 #jumbo{
     background-color: #B4D0E7;
@@ -140,7 +141,7 @@ nav ul li{
     max-width: 93%;
 }
 
-/* section 2 = plan-section*/
+/* Section 2 = plan-section*/
 
 #plan-section .row:first-child, #plan-section .row:nth-child(2){
     padding-bottom: 40px;
@@ -262,7 +263,7 @@ nav ul li{
     padding: 7px 50px 7px 50px;
 }
 
-/* section 3 = partener-dropbox */
+/* Section 3 = partener-dropbox */
 
 #partner-dropbox .col{
     width: 50%;
@@ -287,7 +288,7 @@ nav ul li{
     border: 1px solid black;
 }
 
-/* section 4 = operations-section */
+/* Section 4 = operations-section */
 
 #operations-section img{
     width: 100%;
@@ -475,7 +476,49 @@ nav ul li{
     background-color: #e4e4e6;
 }
 
+/* FOOTER --------------------------------------- */
 
+footer{
+    background-color: #000;
+}
+
+footer .row:first-child{
+    padding: 80px 0 80px 0;
+}
+
+footer .row:first-child .col{
+    float: left;
+    width: 20%;
+    color: #ffff;
+}
+
+footer h4{
+    padding-bottom: 15px;
+    font-size: calc(1vh + 10px);
+}
+
+footer ol{
+    line-height: 2.0;
+    font-size: 12px;
+}
+
+footer .row:last-child{
+    padding: 35px 0;
+    position: relative;
+    color: #A0A0A0;
+    font-size: 11px;
+}
+
+footer .row:last-child::before{
+    content: '';
+    position: absolute;
+    width: 8%;
+    height: 1px;
+    left: 0;
+    bottom: 100%;
+    display: block;
+    background-color: #A0A0A0;
+}
 
 
 
@@ -484,8 +527,8 @@ nav ul li{
 
 /* DEBUG */
 
-/* 
-.row{
+
+/* .row{
     border: 1px dashed blue;
 }
 
@@ -493,7 +536,7 @@ nav ul li{
     border: 2px solid fuchsia;
 } 
 
-.container{
+.container, .small-container{
     border: 1px solid greenyellow;
 }
 
