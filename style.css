@@ -1,6 +1,6 @@
 html{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     scroll-behavior: smooth;
 }
 
@@ -17,6 +17,10 @@ li{
 a{
     text-decoration: none;
     color: currentColor;
+}
+
+ol li a:hover{
+    color: #0061FF;
 }
 
 .clearfix::after{
@@ -36,7 +40,7 @@ h2{
 
 h3{
     font-size: calc(2vh + 10px);
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 p{
@@ -51,18 +55,36 @@ p{
 .small-container{
     max-width: 70%;
     margin: auto;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
 }
 
 .padded-container{
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .button{
-    padding: 7px 20px;
+    padding: 10px 20px;
     background-color: #0061FF;
     color: white;
     border: none;
+    display: inline-block;
+    /* se metto il display inline-block oppure block quando restringo non si spacca */
+    text-align: center;
+}
+
+.button:hover{
+    background-color: rgba(1,97,255,0.7);
+}
+
+.button.white-button{
+    background-color: white;
+    color: black;
+    border: 1px solid black; 
+}
+
+.white-button:hover{
+    border: 3px solid #0061FF;
+    color: #0061FF;;
 }
 
 /* HEADER --------------------------------------- */
@@ -88,11 +110,21 @@ header .col.log-in{
     float: right;
 }
 
-nav ul li{
+header nav ol li{
     float: left;
     padding: 0 15px;
     line-height: 30px;
 }
+
+header nav ol li .button{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+header ol li .button:hover{
+    color: #ffff;
+}
+
 
 /* MAIN --------------------------------------- */
 
@@ -100,11 +132,11 @@ nav ul li{
 
 #jumbo{
     background-color: #B4D0E7;
-    height: 665px;
+    height: 660px;
 }
 
 #jumbo .row h1{
-    font-size: calc(3vh + 50px);;
+    font-size: calc(3vh + 52px);;
     padding: 85px 0 40px 0;
 }
 
@@ -113,38 +145,34 @@ nav ul li{
 }
 
 #jumbo .col:first-child{
-    width: 30%;
+    width: 31%;
 }
 
 #jumbo .col:last-child{
-    width: 70%;
+    width: 69%;
     text-align: right;
 }
 
 #jumbo .col > p:first-child{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 #jumbo .col > .annulla{
-    padding: 20px 0 35px 0;
+    padding: 15px 0 35px 0;
 }
 
 #jumbo .col i{
     font-size: 35px;
 }
 
-.jumbo-img_wrapper{
-    padding-bottom: 100px;
-}
-
 .jumbo-img_wrapper img{
-    max-width: 93%;
+    max-width: 94%;
 }
 
 /* Section 2 = plan-section*/
 
-#plan-section .row:first-child, #plan-section .row:nth-child(2){
-    padding-bottom: 40px;
+#plan-section .row:first-child{
+    padding: 150px 0 35px 0;
 }
 
 .fatturazione > span{
@@ -165,19 +193,20 @@ nav ul li{
 }
 
 #plan-section .row:nth-child(2){
-    margin: 0 -20px 0 -20px;
+    padding-bottom: 35px;
+    margin: 0 -22px 0 -22px;
 /* se guardo nell'inspector la row supera lateralmente il container ma il margine delle colonne laterali va a coincidere con il container quindi vuol dire che la sottrazione del margin della row al padding della colonna ha funzionato e ora la spaziatura è giusta */
 }
 
-#plan-section .col , #operations-section .col{
+#plan-section .col, #operations-section .col{
     width: calc(100%/3);
     float: left;
-    padding: 20px;
+    padding: 22px;
 }
 
 .plan-type{
     border: 1px solid rgba(0, 0, 0, 0.2);
-    height: 980px;
+    height: 1050px;
 }
 
 .plan-header{
@@ -187,19 +216,19 @@ nav ul li{
 }
 
 .plan-info,.punti-salienti{
-    width: 83%;
-    padding: 30px 0;
+    width: 80%;
+    padding: 35px 0;
     margin: auto;
     position: relative;
 }
 
 .price{
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 
 .validità{
     color: #848484;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .descrizione li{
@@ -207,7 +236,7 @@ nav ul li{
 }
 
 .free-30days{
-    margin: 20px 0;
+    margin: 25px 0;
     display: block;
     text-align: center;
 }
@@ -215,6 +244,10 @@ nav ul li{
 .buy-now{
     text-decoration: underline;
     color: #0061FF;
+}
+
+.buy-now:hover{
+    color: rgba(1,97,255,0.7);
 }
 
 .plan-info::after{
@@ -236,31 +269,31 @@ nav ul li{
     color: #0061FF;
 }
 
-.section-footer{
+.plan-footer{
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.footer-col{
+.plan-footer_col{
     padding: 30px 20px 20px 20px;
 }
 
-.footer-col:nth-child(2){
-    width: 60%;
+.plan-footer_col:nth-child(2){
+    width: 65%;
     float: left;
 }
 
-.footer-col h4{
+.plan-footer_col h4{
     padding-bottom: 30px;
 }
 
-.footer-col:nth-child(3){
-    width: 40%;
+.plan-footer_col:nth-child(3){
+    width: 35%;
     float: left;
 }
 
-.footer-col .blue-button{
-    padding: 7px 50px 7px 50px;
+.plan-footer_col a{
+    display: block;
 }
 
 /* Section 3 = partener-dropbox */
@@ -278,14 +311,14 @@ nav ul li{
     max-width: 100%;
 }
 
-#partner-dropbox .col h3, p{
+#partner-dropbox .col p{
     padding-bottom: 30px;
+    line-height: 1.7;
 }
 
-#partner-dropbox .col .button{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+#partner-dropbox .col h3{
+    padding-bottom: 20px;
+    line-height: 1.3;
 }
 
 /* Section 4 = operations-section */
@@ -300,6 +333,10 @@ nav ul li{
 
 #operations-section a{
     text-decoration: underline;
+}
+
+#operations-section a:hover{
+    color: #0061FF;
 }
 
 /* Section 5 = team-section */
@@ -321,9 +358,13 @@ nav ul li{
 #team-section .row:first-child a{
     text-decoration: underline;
     color: #0061FF;
-    display: block;
+    display: inline-block;
     padding-bottom: 35px;
-} 
+}
+
+#team-section .row:first-child a:hover{
+    color: rgba(1,97,255,0.7);
+}
 
 #team-section .row:nth-child(2) .col{
     height: 426.3px;
@@ -438,11 +479,13 @@ nav ul li{
 }
 
 #freeTrial-section a{
-    background-color: #ffff;
+    border: none;
     display: block;
-    text-align: center;
-    padding: 7px 0;
 }
+
+#freeTrial-section a:hover{
+    border: 3px solid #0061FF;
+} /* se lascio solo .white-button:hover non lo prende */
 
 /* Section 7 = faq-section */
 #faq-section h3{
@@ -455,6 +498,7 @@ nav ul li{
     padding: 30px 0;
     position: relative;
     font-weight: 900;
+    cursor: help;
 }
 
 #faq-section .questions div{
@@ -531,22 +575,15 @@ footer .row:last-child::before{
 /* .row{
     border: 1px dashed blue;
 }
-
 .col{
     border: 2px solid fuchsia;
 } 
-
 .container, .small-container{
     border: 1px solid greenyellow;
 }
-
-
 #team-section .img-wrapper{
     border: 1px dashed green;
 } 
-
 nav{
     border: 1px solid red;
 } */
-
-
