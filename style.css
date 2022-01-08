@@ -360,6 +360,7 @@ header ol li .button:hover{
     color: #0061FF;
     display: inline-block;
     padding-bottom: 35px;
+    line-height: 2.0;
 }
 
 #team-section .row:first-child a:hover{
