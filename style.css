@@ -395,7 +395,7 @@ header ol li .button:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    fill: white;
+    filter: invert(1); /* usato per cambiare il colore delle svg */
 }
 
 #team-section .col:first-child .img-wrapper:nth-child(1){
@@ -442,7 +442,6 @@ header ol li .button:hover{
 }
 
 #team-section .col:nth-child(2) svg{
-    fill: #000;
     width: 50%;
 }
 
