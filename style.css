@@ -388,6 +388,12 @@ header ol li .button:hover{
 #team-section .col:nth-child(odd) .img-wrapper{
     position: relative;
     float: left;
+    border: 10px solid rgba(255, 255, 255, 0);
+    /* do il border anche all'immagine però con trasparenza 0 perchè così quando ci vaso un in hover l'immagine non si rimpicciolisce perchè ha già un border anche se non si vede */
+}
+
+#team-section .col:nth-child(odd) .img-wrapper:hover{
+    border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
 #team-section .col:nth-child(odd) svg{
